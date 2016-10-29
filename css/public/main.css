@@ -1,4 +1,56 @@
-body {
-  background-color: #333; }
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif; }
+
+.introbox {
+  height: 400px; }
+
+#intro {
+  background-color: #eee; }
+
+#block1 {
+  background-color: #000;
+  color: #fff; }
+
+#block1_1 {
+  background-color: #ddd;
+  color: #000; }
+
+.block1_intro {
+  font-size: 1.7em;
+  text-align: center; }
+
+.block1_line {
+  position: absolute;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  width: 0.05%;
+  left: 49.95%;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 10px; }
+
+.block1_content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.3em;
+  line-height: 1.5; }
+
+.block1_title1 {
+  font-size: 1.7em;
+  border: 2px solid #fff;
+  margin-left: 5px;
+  text-align: center;
+  width: 130px;
+  line-height: 0.05; }
+
+.block1_title2 {
+  font-size: 1.7em;
+  border: 2px solid #000;
+  margin-left: 5px;
+  text-align: center;
+  width: 130px;
+  line-height: 0.05; }
 
 /*# sourceMappingURL=main.css.map */
