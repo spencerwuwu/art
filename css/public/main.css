@@ -53,4 +53,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
   width: 130px;
   line-height: 0.05; }
 
+#block2 {
+  background-color: #fff;
+  color: #000; }
+
+.block_intro {
+  font-size: 5em;
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
