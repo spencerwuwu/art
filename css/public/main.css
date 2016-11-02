@@ -8,8 +8,8 @@ body, p, h1, h2, h3, h4, h5, h6, a {
   width: 100%;
   position: fixed;
   top: 0;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 13%;
+  padding-right: 5%;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #000;
@@ -22,11 +22,40 @@ body, p, h1, h2, h3, h4, h5, h6, a {
   border: 0.5px solid white;
   width: 45px;
   height: 45px;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative;
+  display: inline-block; }
 
 .menubar_w {
   font-size: 1.3em;
-  float: right; }
+  float: right;
+  padding-top: 20px;
+  position: relative;
+  display: inline-block; }
+
+.menubar_w_item {
+  font-size: 1.3em;
+  float: right;
+  width: 18%;
+  text-align: center; }
+
+.menubar_s {
+  font-size: 4em;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px; }
+
+#btn1_w {
+  border-right: 0.5px solid #fff; }
+
+#btn2_w {
+  border-right: 0.5px solid #fff; }
+
+#btn3_w {
+  border-right: 0.5px solid #fff; }
+
+#btn4_w {
+  border-right: 0.5px solid #fff; }
 
 .introbox {
   height: 400px; }

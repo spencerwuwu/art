@@ -9,6 +9,12 @@
     padding-top: 120%;
 }
 @media screen and (max-width: 485px){
+    .menubar_w{
+        display: none
+    }
+    .menubar_s{
+        display: inline-block
+    }
     .block1_content{
         margin-left: 50px
     }
@@ -30,6 +36,12 @@
 }
 
 @media screen and (min-width: 486px){
+    .menubar_w{
+        display: none
+    }
+    .menubar_s{
+        display: inline-block
+    }
     .block1_content{
         margin-left: 130px
     }
@@ -51,6 +63,13 @@
 }
 
 @media screen and (min-width: 769px){
+    .menubar_w{
+        width: 80%;
+        display: inline-block;
+    }
+    .menubar_s{
+        display: none
+    }
     .block1_content{
         margin-left: 130px
     }
@@ -71,6 +90,13 @@
     }
 }
 @media screen and (min-width: 1350px){
+    .menubar_w{
+        width: 50%;
+        display: inline-block;
+    }
+    .menubar_s{
+        display: none
+    }
     .block1_content{
         margin-left: 250px
     }
