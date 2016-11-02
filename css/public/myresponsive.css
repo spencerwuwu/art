@@ -3,15 +3,90 @@
     display: block;
     padding-top: 100%;
 }
-
-@media screen and (max-width: 768px){
+.list_box2::before {
+    content: "";
+    display: block;
+    padding-top: 120%;
+}
+@media screen and (max-width: 485px){
+    .block1_content{
+        margin-left: 50px
+    }
+    .block1_title1{
+        margin-left: 70px
+    }
+    .block1_title2{
+        margin-left: 40px
+    }
+    .block1_1_content{
+        margin-left: 20px
+    }
     .list_box{
+        width: 100%
+    }
+    .list_box2{
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 486px){
+    .block1_content{
+        margin-left: 130px
+    }
+    .block1_title1{
+        margin-left: 150px
+    }
+    .block1_title2{
+        margin-left: 80px
+    }
+    .block1_1_content{
+        margin-left: 60px
+    }
+    .list_box{
+        width: 100%
+    }
+    .list_box2{
         width: 100%
     }
 }
 
 @media screen and (min-width: 769px){
+    .block1_content{
+        margin-left: 130px
+    }
+    .block1_title1{
+        margin-left: 150px
+    }
+    .block1_title2{
+        margin-left: 60px
+    }
+    .block1_1_content{
+        margin-left: 70px
+    }
     .list_box{
         width: 25%
     }
-
+    .list_box2{
+        width: 25%
+    }
+}
+@media screen and (min-width: 1350px){
+    .block1_content{
+        margin-left: 250px
+    }
+    .block1_title1{
+        margin-left: 270px
+    }
+    .block1_title2{
+        margin-left: 230px
+    }
+    .block1_1_content{
+        margin-left: 210px
+    }
+    .list_box{
+        width: 25%
+    }
+    .list_box2{
+        width: 25%
+    }
+}
