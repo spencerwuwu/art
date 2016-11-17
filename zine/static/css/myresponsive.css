@@ -17,10 +17,17 @@
         font-size: 2.5em;
     }
     .item{
-        width: 30%;
+        width: 25%;
+        margin: 10px;
     }
     .item-content{
         font-size: 1em;
+        padding-top: 15%
+    }
+    .item-content>p{
+        font-size: 1em;
+        padding-top: 12%;
+        display: none
     }
 
 }
@@ -38,9 +45,11 @@
     }
     .item{
         width: 30%;
+        margin: 14px;
     }
     .item-content{
         font-size: 1.2em;
+        padding-top: 18%
     }
 
 }
@@ -58,9 +67,11 @@
     }
     .item{
         width: 17%;
+        margin: 15px;
     }
     .item-content{
         font-size: 1.2em;
+        padding-top: 18%
     }
 
 }
@@ -79,8 +90,10 @@
     }
     .item{
         width: 17%;
+        margin: 15px;
     }
     .item-content{
         font-size: 1.5em;
+        padding-top: 20%
     }
 }
