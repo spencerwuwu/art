@@ -1,0 +1,19 @@
+.item:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+@media screen and (max-width: 485px){
+
+}
+@media screen and (min-width: 484px){
+
+}
+@media screen and (min-width: 769px){
+
+}
+
+@media screen and (min-width: 1350px){
+
+}
