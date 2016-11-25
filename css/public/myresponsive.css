@@ -3,11 +3,11 @@
     display: block;
     padding-top: 100%;
 }
-.list_box2::before {
-    content: "";
-    display: block;
-    padding-top: 120%;
-}
+    .list_box2::before {
+        content: "";
+        display: block;
+        padding-top: 120%;
+    }
 @media screen and (max-width: 485px){
     .menubar_w{
         display: none
@@ -31,7 +31,10 @@
         width: 100%
     }
     .list_box2{
-        width: 100%
+        display: none;
+    }
+    .list_box2_s{
+        display: block;
     }
 }
 
@@ -58,7 +61,10 @@
         width: 100%
     }
     .list_box2{
-        width: 100%
+        display: none;
+    }
+    .list_box2_s{
+        display: block;
     }
 }
 
@@ -86,7 +92,11 @@
         width: 25%
     }
     .list_box2{
-        width: 25%
+        width: 25%;
+        display: block;
+    }
+    .list_box2_s{
+        display: none;
     }
 }
 @media screen and (min-width: 1350px){
@@ -113,6 +123,10 @@
         width: 25%
     }
     .list_box2{
-        width: 25%
+        width: 25%;
+        display: block;
+    }
+    .list_box2_s{
+        display: none;
     }
 }
