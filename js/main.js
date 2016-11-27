@@ -6,7 +6,7 @@ $(document).ready(function(){
 	var h = w/7*3
 	}
 	else{
-	var h = w/7*5
+	var h = w/7*4.5
 	}
 
 	$("#intro").css("height", h);
@@ -55,7 +55,7 @@ $(window).resize(function(){
 	var h = w/7*3
 	}
 	else{
-	var h = w/7*5
+	var h = w/7*4.5
 	}
 	$("#intro").css("height", h);
 	$(".intro-img-con").css("height", h);

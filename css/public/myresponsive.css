@@ -192,11 +192,21 @@
 
 @media screen and (max-width: 549px){
     #island{
-        bottom: -20%
+        bottom: -32%
+    }
+    #title{
+        top: 55%;
+        right: 10%;
+        width: 35%;
     }
 }
 @media screen and (min-width: 550px){
     #island{
-        bottom: -40%
+        bottom: -50%
+    }
+    #title{
+        top: 45%;
+        right: 10%;
+        width: 30%;
     }
 }
