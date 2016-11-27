@@ -3,11 +3,9 @@
     display: block;
     padding-top: 100%;
 }
-    .list_box2::before {
-        content: "";
-        display: block;
-        padding-top: 120%;
-    }
+
+
+
 @media screen and (max-width: 485px){
     .menubar_w{
         display: none
@@ -16,16 +14,22 @@
         display: inline-block
     }
     .block1_content{
-        margin-left: 50px
+        margin-left: 10px
+    }
+    .block1_content>p{
+        font-size: 1.15em
     }
     .block1_title1{
-        margin-left: 70px
+        margin-left: 50px
     }
     .block1_title2{
         margin-left: 40px
     }
     .block1_1_content{
         margin-left: 20px
+    }
+    .block1_1_content>p{
+        font-size: 1.15em
     }
     .list_box{
         width: 100%
@@ -40,7 +44,7 @@
         width: 80%;
     }
     .one-item-n{
-        width: 45%;
+        width: 60%;
     }
 }
 
@@ -52,16 +56,23 @@
         display: inline-block
     }
     .block1_content{
-        margin-left: 130px
+        margin-left: 80px;
+    }
+    .block1_content>p{
+        font-size: 1.3em
     }
     .block1_title1{
-        margin-left: 150px
+        margin-left: 120px
     }
     .block1_title2{
         margin-left: 80px
     }
     .block1_1_content{
-        margin-left: 60px
+        margin-left: 60px;
+        font-size: 1em;
+    }
+    .block1_1_content>p{
+        font-size: 1.3em
     }
     .list_box{
         width: 100%
@@ -76,7 +87,7 @@
         width: 80%;
     }
     .one-item-n{
-        width: 45%;
+        width: 60%;
     }
 }
 
@@ -89,19 +100,25 @@
         display: none
     }
     .block1_content{
-        margin-left: 130px
+        margin-left: 40px
+    }
+    .block1_content>p{
+        font-size: 1.3em
     }
     .block1_title1{
-        margin-left: 150px
+        margin-left: 80px
     }
     .block1_title2{
-        margin-left: 60px
+        margin-left: 20px
     }
     .block1_1_content{
-        margin-left: 70px
+        margin-left: 0
+    }
+    .block1_1_content>p{
+        font-size: 1.3em
     }
     .list_box{
-        width: 25%
+        width: 24%
     }
     .list_box2{
         width: 25%;
@@ -114,7 +131,18 @@
         width: 40%;
     }
     .one-item-n{
-        width: 65%;
+        width: 85%;
+    }
+}
+@media screen and (min-width: 900px){
+    .block1_content{
+        margin-left: 90px
+    }
+    .block1_content>p{
+        font-size: 1.3em
+    }
+    .block1_title1{
+        margin-left: 130px
     }
 }
 @media screen and (min-width: 1350px){
@@ -126,19 +154,25 @@
         display: none
     }
     .block1_content{
-        margin-left: 250px
+        margin-left: 180px
+    }
+    .block1_content>p{
+        font-size: 1.3em
     }
     .block1_title1{
-        margin-left: 270px
+        margin-left: 220px
     }
     .block1_title2{
-        margin-left: 230px
+        margin-left: 80px
     }
     .block1_1_content{
-        margin-left: 210px
+        margin-left: 60px
+    }
+    .block1_1_content>p{
+        font-size: 1.3em
     }
     .list_box{
-        width: 25%
+        width: 24%
     }
     .list_box2{
         width: 25%;
@@ -151,6 +185,18 @@
         width: 40%;
     }
     .one-item-n{
-        width: 65%;
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 549px){
+    #island{
+        bottom: -20%
+    }
+}
+@media screen and (min-width: 550px){
+    #island{
+        bottom: -40%
     }
 }

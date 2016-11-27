@@ -7,9 +7,15 @@
 
     <link rel="stylesheet" type="text/css" href="css/public/main.css">
     <link rel="stylesheet" type="text/css" href="css/public/myresponsive.css">
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/main.js" ></script>
+
 
   </head>
   <body>
+
+    <div id="menublack"></div>
+
     <div class="topmenu">
       <a href=""><div class="mylogo"></div></a>
       <div class="menubar_w">
@@ -19,14 +25,23 @@
         <div class="menubar_w_item" id="btn1_w"><a href="">關於</a></div>
       </div>
 
-      <div class="menubar_s"><a id="menubtn">&equiv;</a></div>
+      <div class="menubar_s" id="menubtn" ><a>&equiv;</a></div>
     </div>
 
-    <div class="mycon" id="intro">
-      <div class="myrow">
-        <div class="introbox">
+  <!-- 以上為base -->
 
+
+
+    <div class="mycon" id="intro">
+      <div class="introbox">
+
+        <div class="intro-img-con">
+          <img class="intro-ani" id="island" src="img/Homepage_bg_Island.png" />
+          <img class="intro-ani" id="wave1" src="img/wave.png" />
+          <img class="intro-ani" id="wave2" src="img/wave.png" />
+          <img class="intro-ani" id="wave3" src="img/wave.png" />
         </div>
+
       </div>
 
     </div>
@@ -38,10 +53,8 @@
         </div>
       </div>
 
-      <div class="myrow">
-        <div class="one-item">
-          <div class="block1_line"></div>
-        </div>
+      <div class="myrow-m">
+        <div class="block1_line"></div>
       </div>
 
       <div class="myrow">
@@ -94,34 +107,92 @@
       <div class="myrow-m">
         <div class="one-item">
           <div class="block_intro"><p>活動</p></div>
-          <div class="block_subintro"><p>關於第一屆有點辛苦這樣的一個故事</p></div>
+          <div class="block_subintro"><p>不同的島，不同的故事</p></div>
         </div>
       </div>
 
-      <div class="myrow">
+      <div class="myrow-m">
         <div class="one-item-n">
-          <div class="list_box">
-            <div class="list_box_con">
-              <p>test</p>
+
+          <div class="list_box" id="list1">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p>那瞬間我才意識到，日常的風景出現雜訊。</p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity01.png" />
             </div>
           </div>
-          <div class="list_box">
-          </div>
-          <div class="list_box">
-          </div>
-          <div class="list_box">
-          </div>
-          <div class="list_box">
-            <div class="list_box_con">
-              <p>test</p>
+
+          <div class="list_box" id="list2">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p> -- </p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity02.png" />
             </div>
           </div>
-          <div class="list_box">
+
+          <div class="list_box" id="list3">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p>我們都是獨一無二的島。</p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity03.png" />
+            </div>
           </div>
-          <div class="list_box">
+
+          <div class="list_box" id="list4">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p>「談」</p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity04.png" />
+            </div>
           </div>
-          <div class="list_box">
+
+          <div class="list_box" id="list5">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p>Sing Alone, Sing Along <br>
+                孤獨的人一起唱</p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity05.png" />
+            </div>
           </div>
+
+          <div class="list_box" id="list6">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p> -- </p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity06.png" />
+            </div>
+          </div>
+
+          <div class="list_box" id="list7">
+            <div class="list_box_content">
+              <div class="list_box_icontent">
+                <p>              
+                長大並不可怕，可怕的是遺忘</p>
+              </div>
+            </div>
+            <div class="list_box_img list_box_img_w">
+              <img src="img/Homepage_Activity07.png" />
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -136,31 +207,50 @@
 
       <div class="mycon"  id="block3_under">
         <div class="list_box2_con">
+
           <!-- wide -->
           <div class="list_box2">
-            <img class="list_box2_img" src="test.jpg" class="list_box2_img"/>
+            <div class="list_box2_img">
+              <img  src="test.jpg" style="width: 100%"/>
+            </div>
             <div class="list_box2_title"><p>超級袋袋</p></div>
           </div>
-          <div class="list_box2">
-          </div>
-          <div class="list_box2">
-          </div>
-          <div class="list_box2">
-          </div>
 
-          <!-- small -->
-          <div class="list_box2_s">
-            <div class="list_box2_s_title">
-              <p>超級袋袋</p>
+          <div class="list_box2">
+            <div class="list_box2_img">
+              <img  src="test.jpg" style="width: 100%"/>
             </div>
-            <div class="list_box2_s_arrow">
-              <p>></p>
+            <div class="list_box2_title"><p>超級袋袋</p></div>
+          </div>
+
+          <div class="list_box2">
+            <div class="list_box2_img">
+              <img  src="test.jpg" style="width: 100%"/>
             </div>
+            <div class="list_box2_title"><p>超級袋袋</p></div>
+          </div>
 
-
+          <div class="list_box2">
+            <div class="list_box2_img">
+              <img  src="test.jpg" style="width: 100%"/>
+            </div>
+            <div class="list_box2_title"><p>超級袋袋</p></div>
           </div>
         </div>
+
+        <!-- small -->
+        <div class="list_box2_s">
+          <div class="list_box2_s_title">
+            <p>超級袋袋</p>
+          </div>
+          <div class="list_box2_s_arrow">
+            <p>></p>
+          </div>
+
+
+        </div>
       </div>
+    </div>
 
     </div>
 
@@ -175,15 +265,33 @@
           </div>
           <div class="one-item" >
             <div class="block_intro"><p>花絮</p></div>
+            <div class="myrow">
+              <div class="gallery1">
+                <img class="gallery-content" src="img/temp.jpg" />
+              </div>
+              <div class="gallery1">
+                <img class="gallery-content" src="img/temp.jpg" />
+              </div>
+              <div class="gallery2">
+                <img class="gallery-content" src="img/temp.jpg" />
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
 
+
+  <!-- 以下為base -->
+
+
     <div class="mycon" id="footer">
       <!-- footer -->
+      <div style="height: 200px">
+      </div>
     </div>
+
 
   </body>
 
