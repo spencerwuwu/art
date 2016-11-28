@@ -1,0 +1,51 @@
+
+@media screen and (max-width: 485px){
+}
+
+@media screen and (min-width: 486px){
+}
+
+@media screen and (min-width: 769px){
+}
+@media screen and (min-width: 900px){
+}
+
+@media screen and (min-width: 1350px){
+}
+
+
+
+
+@media screen and (max-width: 570px){
+    .title{
+        font-size: 1.7em;
+    }
+    .about-intro-title{
+        left: 1%;
+    }
+    #about-island{
+        top: 65%;
+    }
+}
+@media screen and (min-width: 570px){
+    .title{
+        font-size: 2.3em;
+    }
+    .about-intro-title{
+        left: 9%;
+    }
+    #about-island{
+        top: 60%;
+    }
+}
+@media screen and (min-width: 769px){
+    .title{
+        font-size: 3em;
+    }
+    .about-intro-title{
+        left: 11%;
+    }
+    #about-island{
+        top: 40%;
+    }
+}
