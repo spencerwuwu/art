@@ -1,4 +1,27 @@
+body
+  background-color: black
+
 .bkg
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: black
+  padding: 0
+  margin: 0
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+  -webkit-flex-flow: row wrap
+  justify-content: center
+  z-index: -100
+  overflow: hidden
+
+.bkg-w
+  z-index: -10
   position: fixed
   top: 0
   left: 0
@@ -32,9 +55,10 @@
   height: 100%
 
 
-.content
+.sub-content
   width: 80%
-  margin-top: 2%
+  z-index: 0
+  margin-top: 5%
   margin-left: 10%
   margin-right: 10%
   display: -webkit-box
@@ -44,5 +68,37 @@
   display: flex
 
   -webkit-flex-flow: row wrap
+  justify-content: center
+
+.wide-intro
+  width: 90% 
+  padding-top: 10px
+  padding-bottom: 10px
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+  -webkit-flex-flow: row wrap
   justify-content: space-around
-  z-index: 0
+
+.wide-author
+  width: 25%
+  padding: 2px
+  display: block
+
+.wide-intro-content
+  width: 74%
+  padding: 2px
+  display: block
+
+.wide-intro-content
+  width: 100%
+  padding: 2px
+  display: block
+  p
+    margin: 5px
+
+.intro-topic
+  font-size: 2em 
