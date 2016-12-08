@@ -16,7 +16,7 @@
 
 
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 390px){
     .title{
         font-size: 1.7em;
     }
@@ -24,7 +24,18 @@
         left: 1%;
     }
     #about-island{
-        top: 65%;
+        top: 20%;
+    }
+}
+@media screen and (min-width: 390px){
+    .title{
+        font-size: 1.7em;
+    }
+    .about-intro-title{
+        left: 1%;
+    }
+    #about-island{
+        top: 200px;
     }
 }
 @media screen and (min-width: 570px){
@@ -35,7 +46,7 @@
         left: 9%;
     }
     #about-island{
-        top: 60%;
+        top: 28%;
     }
 }
 @media screen and (min-width: 769px){
@@ -46,6 +57,17 @@
         left: 11%;
     }
     #about-island{
-        top: 40%;
+        top: 20%;
+    }
+}
+@media screen and (min-width: 1100px){
+    .title{
+        font-size: 3em;
+    }
+    .about-intro-title{
+        left: 11%;
+    }
+    #about-island{
+        top: 27%;
     }
 }
