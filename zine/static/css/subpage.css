@@ -84,7 +84,8 @@ body {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: space-around;
+  align-items: center; }
 
 .wide-author {
   width: 25%;
@@ -99,6 +100,16 @@ body {
   margin-left: 3%;
   display: block; }
   .wide-intro-content p {
+    margin: 5px; }
+
+.narrow-intro-content {
+  width: 90%;
+  float: right;
+  position: relative;
+  margin-left: 3%;
+  margin-top: 15px;
+  display: block; }
+  .narrow-intro-content p {
     margin: 5px; }
 
 .wide-pic-pic {
@@ -118,18 +129,15 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-content: center;
-  font-size: 2em; }
+  align-items: center; }
   .wide-pic-word div {
     position: relative;
     width: 100%; }
   .wide-pic-word p {
-    margin-top: 43%;
-    font-size: 3em;
     position: relative;
     font-weight: bold; }
 
-.wide-p {
-  font-size: 2em; }
+.narrow-intro-topic {
+  width: 50%; }
 
 /*# sourceMappingURL=subpage.css.map */

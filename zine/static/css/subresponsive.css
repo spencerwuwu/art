@@ -3,12 +3,13 @@
     display: block;
     padding-top: 100%;
 }
-
-@media screen and (max-width: 485px){
-    .wide-author{
-        width: 25%;
-    }
+#wide-con{
+    display: none;
 }
+#narrow-con{
+    display: block;
+}
+
 @media screen and (min-width: 484px){
     .wide-author{
         width: 25%;
@@ -16,20 +17,40 @@
     .wide-intro-content{
         font-size: 1.3em;
     }
-    .intro-topic{
+    .wide-intro-topic{
         font-size: 2.0em ;
     }
 
 }
-@media screen and (min-width: 1050px){
+@media screen and (max-width: 849px){
+    .wide-p{
+        font-size: 1.3em ;
+    }
+    .wide-pic-word{
+        font-size: 2.6em ;
+    }
+}
+@media screen and (min-width: 850px){
     .wide-author{
         width: 25%;
     }
     .wide-intro-content{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
-    .intro-topic{
+    .wide-intro-topic{
         font-size: 2.0em ;
+    }
+    #wide-con{
+        display: block;
+    }
+    #narrow-con{
+        display: none;
+    }
+    .wide-p{
+        font-size: 1.6em ;
+    }
+    .wide-pic-word{
+        font-size: 3.6em ;
     }
 
 }
@@ -39,9 +60,25 @@
         width: 25%;
     }
     .wide-intro-content{
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
     .intro-topic{
-        font-size: 2.6em ;
+        font-size: 2.4em ;
     }
 }
+
+
+@media screen and (max-width: 550px){
+    .narrow-intro-topic{
+        font-size: 2em
+    }
+    .wide-pic-word{
+        font-size: 1.6em ;
+    }
+}
+@media screen and (min-width: 551px){
+    .narrow-intro-topic{
+        font-size: 2.7em
+    }
+}
+
