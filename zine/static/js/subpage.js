@@ -6,7 +6,7 @@ $(document).ready(function(){
   if ( w >= h ){
     $('#bkg-img-w').css("display", "block");
     $('#bkg-img-n').css("display", "none");
-	  if ( h/w >= 23/41 ){ 
+	  if ( h/w >= 2304/4096 ){ 
       	$('#bkg-id').removeClass("bkg");
       	$('#bkg-id').addClass("bkg-w");
 	  }
@@ -36,7 +36,7 @@ $(window).resize(function(){
   if ( w >= h ){
     $('#bkg-img-w').css("display", "block");
     $('#bkg-img-n').css("display", "none");
-	  if ( h/w >= 23/41 ){ 
+	  if ( h/w >= 2304/4096 ){ 
       	$('#bkg-id').removeClass("bkg");
       	$('#bkg-id').addClass("bkg-w");
 	  }
