@@ -138,6 +138,7 @@ body, p, h1, h2, h3, h4, h5, h6, a {
   position: relative;
   margin-left: 3%;
   margin-top: 15px;
+  line-height: 2;
   display: block; }
   .narrow-intro-content p {
     margin: 5px; }
