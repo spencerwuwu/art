@@ -11,15 +11,12 @@ $(document).ready(function(){
 
   if ( w >= 768 ){
     var h2 = w/7*2.3
-    var nh = h2/7*3
   }
   else if ( w >= 550 ){
     var h2 = w/7*3.5
-    var nh = h2/5*3
   }
   else{
     var h2 = w/7*4.5
-    var nh = h2/5*3
   }
 
     $("#intro").css("height", h);
@@ -28,7 +25,7 @@ $(document).ready(function(){
   $("#about-intro").css("height", h2);
   $("#about-intro-img-con").css("height", h2);
 
-  $("#about-island").css("top", nh);
+  $("#about-island").css("top", h2/5*2 + 0.2 * h);
   //menubtn functions
   $("#menubtn").on('click', function(e){
     e.preventDefault();
@@ -76,20 +73,17 @@ $(window).resize(function(){
 
   if ( w >= 768 ){
     var h2 = w/7*2.3
-    var nh = h2/7*3
   }
   else if ( w >= 550 ){
     var h2 = w/7*3.5
-    var nh = h2/5*3
   }
   else{
     var h2 = w/7*4.5
-    var nh = h2/5*3
   }
 
     $("#intro").css("height", h);
   $(".intro-img-con").css("height", h);
   $("#about-intro").css("height", h2);
   $("#about-intro-img-con").css("height", h2);
-  $("#about-island").css("top", nh);
+  $("#about-island").css("top", h2/5*3);
 });
