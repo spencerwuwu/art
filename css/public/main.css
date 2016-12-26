@@ -9,7 +9,7 @@ body {
 .topmenu {
   margin: 0;
   z-index: 150;
-  box-shadow: 0px 5px 5px rgba(80, 80, 80, 0.4);
+  box-shadow: 0px 5px 5px rgba(40, 40, 40, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@ body {
 .menubar_w_item {
   font-size: 1.5em;
   float: right;
-  width: 16%;
+  width: 21%;
   text-align: center;
   margin-left: 2px;
   margin-right: 2px; }
@@ -68,12 +68,6 @@ body {
   border-right: 0.5px solid #fff; }
 
 #btn2_w {
-  border-right: 0.5px solid #fff; }
-
-#btn3_w {
-  border-right: 0.5px solid #fff; }
-
-#btn4_w {
   border-right: 0.5px solid #fff; }
 
 .mycon {
@@ -203,7 +197,6 @@ body {
 #block1 {
   background-color: #000;
   color: #fff;
-  padding-bottom: 4%;
   box-shadow: 0px -3px 5px rgba(80, 80, 80, 0.5); }
   #block1 a {
     color: #fff; }
@@ -250,7 +243,6 @@ body {
 .intro-img2 {
   width: 80%;
   padding-left: 10%;
-  padding-top: 25%;
   position: relative; }
 
 .block1_intro {
