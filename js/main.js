@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   //set intro height
@@ -22,6 +23,7 @@ $(document).ready(function(){
     var nh = h2/5*3
   }
 
+
     $("#intro").css("height", h);
   $(".intro-img-con").css("height", h);
 
@@ -29,6 +31,9 @@ $(document).ready(function(){
   $("#about-intro-img-con").css("height", h2);
 
   $("#about-island").css("top", nh);
+
+   var shoph = w/16*9*0.8+60;
+    $("#shop-intro").css("height", shoph);
   //menubtn functions
   $("#menubtn").on('click', function(e){
     e.preventDefault();
@@ -92,4 +97,9 @@ $(window).resize(function(){
   $("#about-intro").css("height", h2);
   $("#about-intro-img-con").css("height", h2);
   $("#about-island").css("top", nh);
+   var shoph = w/16*9*0.8+60;
+    $("#shop-intro").css("height", shoph);
+
+
 });
+

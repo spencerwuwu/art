@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/public/shop.css">
     <link rel="stylesheet" type="text/css" href="css/public/myresponsive.css">
     <link rel="stylesheet" type="text/css" href="css/public/shop-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/public/video.css">
     <script src="js/jquery.min.js" ></script>
     <script src="js/main.js" ></script>
 
@@ -32,16 +33,40 @@
 
     <!-- 以上為base -->
 
-    <div class="mycon" id="about-intro">
+    <div class="mycon" id="shop-intro">
       <div class="introbox">
         <div class="shop-intro-img-con">
+
+          <div id="containingBlock">
+            <div class="videoWrapper">
+              <div>
+                <!--[if IE]>
+                  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="480" height="295">
+                  <param name="movie" value="http://www.youtube.com/v/mDRYnaajUcY&amp;hl=en&amp;fs=1&amp;showinfo=0" />
+                <![endif]-->
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/mDRYnaajUcY&amp;hl=en&amp;fs=1&amp;showinfo=0" width="480" height="295">
+                  <!--<![endif]-->
+                  <param name="quality" value="high" />
+                  <param name="wmode" value="opaque" />
+                  <p><a href="http://www.adobe.com/go/getflashplayer"><img alt="Get Adobe Flash player" src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"/></a></p>
+                </object>
+              </div>
+            </div>
+            ...
+          </div>
+
 
         </div>
       </div>
     </div>
     </div>
 
+    </div>
+
+
     <div class="mycon"  id="about-block1">
+
 
       <div class="myrow-m" >
         <div class="about-con">
@@ -73,7 +98,55 @@
             </div>
           </div>
 
-          <div class="about-content">
+          <div class="shop-container">
+
+            <div class="shop-item">
+              <div class="shop-item-img-con">
+                <img src="test2.jpg" class="shop-item-img" />
+              </div>
+              <div class="shop-item-content">
+                <div class="shop-item-title">
+                  <p>超級袋袋</p>
+                </div>
+                <div class="shop-item-detail">
+                  <p>世界充滿各種羞辱。<br>
+                  平時你要行走與闖蕩，<br>
+                  陪在你身邊不如在你心裡，<br>
+                  你才能一次一次敢去遠方。<br>
+                  不過，此時坐在你心裡，<br>
+                  不如此刻無視於所有羞辱還是要在你身邊。</p>
+                </div>
+                <a href="">
+                  <div class="shop-item-control">
+                    <p>贊助我們</p>
+                  </div>
+                </a>
+              </div>
+              <div class="shop-item-null"></div>
+            </div>
+
+            <div class="shop-item">
+              <div class="shop-item-img-con">
+                <img src="test2.jpg" class="shop-item-img" />
+              </div>
+              <div class="shop-item-content">
+                <div class="shop-item-title">
+                  <p>超級袋袋</p>
+                </div>
+                <div class="shop-item-detail">
+                  <p>這世界人們的心中，<br>
+                  不該繼續揣摩天使出現的樣子，<br>
+                  也許我們一直在等待的，<br>
+                  就算該是天使也其實從不是天使，</p>
+                </div>
+                <a href="">
+                  <div class="shop-item-control">
+                    <p>贊助我們</p>
+                  </div>
+                </a>
+              </div>
+              <div class="shop-item-null"></div>
+            </div>
 
           </div>
         </div>

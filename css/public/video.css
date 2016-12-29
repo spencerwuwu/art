@@ -1,0 +1,25 @@
+#containingBlock {
+    position: absolute;
+    width:80%;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
+}
+* html .videoWrapper {
+    margin-bottom: 45px;
+    margin-bot\tom: 0;
+}
+.videoWrapper div,
+.videoWrapper object {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+}
