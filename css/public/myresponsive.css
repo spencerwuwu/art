@@ -141,6 +141,9 @@
     .block1_content>p{
         font-size: 1.3em
     }
+    .block1_1_content>p{
+        font-size: 1.3em
+    }
     .block1_title1{
         margin-left: 130px
     }
@@ -185,7 +188,7 @@
         width: 40%;
     }
     .one-item-n{
-        width: 85%;
+        width: 80%;
     }
 }
 

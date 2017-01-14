@@ -26,6 +26,7 @@ $(document).ready(function(){
 
     $("#intro").css("height", h);
   $(".intro-img-con").css("height", h);
+  $(".cover").css("top", h);
 
   $("#about-intro").css("height", h2);
   $("#about-intro-img-con").css("height", h2);
@@ -94,6 +95,7 @@ $(window).resize(function(){
 
     $("#intro").css("height", h);
   $(".intro-img-con").css("height", h);
+  $(".cover").css("top", h);
   $("#about-intro").css("height", h2);
   $("#about-intro-img-con").css("height", h2);
   $("#about-island").css("top", nh);
