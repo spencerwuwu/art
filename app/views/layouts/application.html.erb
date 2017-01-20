@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>交大藝趣節</title>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div id="menublack"></div>
+    <div class="topmenu">
+      <a href=""><div class="mylogo"></div></a>
+      <div class="menubar_w">
+        <div class="menubar_w_item" id="btn3_w">
+          <%= link_to '藝文誌', 'http://isolated-island.nctu.me' %>
+        </div>
+        <div class="menubar_w_item" id="btn2_w">
+          <%= link_to '周邊贊助', donate_path %>
+        </div>
+        <div class="menubar_w_item" id="btn1_w">
+          <%= link_to '關於我們', about_path %>
+        </div>
+      </div>
+      <div class="menubar_s" id="menubtn" ><a>&equiv;</a></div>
+    </div>
+
+    <%= yield %>
+
+    <div class="mycon" id="footer">
+      <!-- footer -->
+      <div style="height: 200px">
+      </div>
+    </div>
+  </body>
+</html>
