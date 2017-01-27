@@ -9,6 +9,9 @@
 #narrow-con{
     display: block;
 }
+.narrow{
+    display: block;
+}
 
 @media screen and (min-width: 484px){
     .wide-author{
@@ -44,6 +47,9 @@
         display: block;
     }
     #narrow-con{
+        display: none;
+    }
+    .narrow{
         display: none;
     }
     .wide-p{
@@ -82,3 +88,17 @@
     }
 }
 
+.showup{
+  animation: showup 1.5s ease forwards;
+  -webkit-animation: showup 1.5s ease forwards;
+}
+
+@-webkit-keyframes showup {
+    0%   {  opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes showup{
+    0%   {  opacity: 1; }
+    100% {  opacity: 0; }
+}

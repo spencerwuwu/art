@@ -1,5 +1,6 @@
 body,p,h1,h2,h3,h4,h5,h6,a 
   color: white
+  text-decoration: none
 
 
 .bkg
@@ -181,3 +182,94 @@ body,p,h1,h2,h3,h4,h5,h6,a
 
 .wide-p
   line-height: 2
+
+.float-pic
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  box-shadow: 0px 5px 10px rgba(80,80,80,0.5)
+
+.unfloat-pic
+  width: 100%
+  position: relative
+  margin-top: 0
+
+.narrow-bkg
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: #23457A
+
+.home-con
+  width: 100%
+  position: relative
+
+.home-item
+  width: 50px 
+  float: right
+  margin-right: 15px
+  margin-top: 8px
+  margin-bottom: 8px
+  box-shadow: 4px 4px 4px rgba(80,80,80,0.7)
+  transition: all 0.5s ease-in-out
+
+  &:hover
+    margin-top: 4px
+    box-shadow: 7px 7px 7px rgba(80,80,80,0.9)
+
+.page-control
+  z-index: 1000
+  position: fixed
+  width: 5%
+  opacity: 0
+  height: 100%
+  padding-top: 5%
+  padding-bottom: 5%
+  top: 0
+  transition: all 0.5s ease-in-out
+
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+  -webkit-flex-flow: row wrap
+  justify-content: center
+  align-items: center
+
+  &:hover
+    opacity: 0.9
+
+
+.toRight
+  padding-right: 15px 
+  padding-left: 5px 
+  background: rgba(0,0,0,0.7) /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* Standard syntax */
+  
+  right: 0
+
+.toLeft
+  padding-left: 15px 
+  padding-right: 5px 
+  background: rgba(0,0,0,0.7) /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)) /* Standard syntax */
+  
+  left: 0
+
+.page-item
+  position: relative
+  font-size: 2em
+  color: white
+  text-align: center
