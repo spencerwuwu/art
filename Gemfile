@@ -9,6 +9,10 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'capistrano-rails', group: :development
+gem 'mini_magick', '~> 4.6.0'
+gem 'bourbon', '~> 4.2.7'
+gem "administrate", "~> 0.3.0"
+gem 'carrierwave', '~> 1.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri

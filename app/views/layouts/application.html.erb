@@ -14,7 +14,9 @@
   <body>
     <div id="menublack"></div>
     <div class="topmenu">
-      <a href=""><div class="mylogo"></div></a>
+      <%= link_to root_path do %> 
+        <div class="mylogo"></div>
+      <% end %>
       <div class="menubar_w">
         <div class="menubar_w_item" id="btn3_w">
           <%= link_to '藝文誌', 'http://isolated-island.nctu.me' %>
