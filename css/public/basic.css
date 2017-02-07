@@ -26,11 +26,9 @@ body {
 
 .mylogo {
   font-size: 1.3em;
-  border: 0.5px solid white;
-  width: 45px;
-  height: 45px;
-  background-color: #fff;
+  width: 100px;
   position: relative;
+  background-color: transparent;
   display: inline-block; }
 
 .menubar_w {
