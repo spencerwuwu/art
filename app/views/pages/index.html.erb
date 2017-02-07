@@ -41,7 +41,7 @@
         &nbsp;&nbsp;&nbsp;像是一座孤島。</p>
       </div>
       <div class="block1_title1">
-        <p>關於</p>
+        <p><%= link_to '關於', '/pages/about#about-block1' %></p>
       </div>
     </div>
 
@@ -71,7 +71,7 @@
         &nbsp;&nbsp;&nbsp;因為每座島嶼，都屬於群島。</p>
       </div>
       <div class="block1_title2">
-        <p>關於</p>
+        <p><%= link_to '關於', '/pages/about#about-block2' %></p>
       </div>
     </div>
   </div>
@@ -185,55 +185,38 @@
         <div class="list_box2_con">
 
           <!-- wide -->
-          <div class="list_box2">
-            <div class="list_box2_img">
-              <%= image_tag "test.jpg", style: "width: 100%" %>
-            </div>
-            <div class="list_box2_title"><p>超級袋袋</p></div>
-          </div>
+          <% @products.each do |p| %>
+            <%= link_to donate_path do %>
+              <div class="list_box2">
+                <div class="list_box2_img">
+                  <% if p.image.thumb.url %>
+                    <%= image_tag p.image.thumb.url, style: "width: 100%" %>
+                  <% else %>
+                    <%= image_tag 'test.jpg', style: "width: 100%" %>
+                  <% end %>
+                </div>
+                <div class="list_box2_title"><p><%= p.title %></p></div>
+              </div>
+            <% end %>
+          <% end %>
 
-          <div class="list_box2">
-            <div class="list_box2_img">
-              <%= image_tag "test.jpg", style: "width: 100%" %>
-            </div>
-            <div class="list_box2_title"><p>超級袋袋</p></div>
-          </div>
-
-          <div class="list_box2">
-            <div class="list_box2_img">
-              <%= image_tag "test.jpg", style: "width: 100%" %>
-            </div>
-            <div class="list_box2_title"><p>超級袋袋</p></div>
-          </div>
-
-          <div class="list_box2">
-            <div class="list_box2_img">
-              <%= image_tag "test.jpg", style: "width: 100%" %>
-            </div>
-            <div class="list_box2_title"><p>超級袋袋</p></div>
-          </div>
         </div>
       </div>
     </div>
 
     <!-- small -->
-    <div class="list_box2_s">
-      <div class="list_box2_s_title">
-        <p>超級袋袋</p>
-      </div>
-      <div class="list_box2_s_arrow">
-        <p>&lt;</p>
-      </div>
-    </div>
-
-    <div class="list_box2_s">
-      <div class="list_box2_s_title">
-        <p>超級袋袋</p>
-      </div>
-      <div class="list_box2_s_arrow">
-        <p>&lt;</p>
-      </div>
-    </div>
+    <% @products.each do |p| %>
+      <%= link_to product_buy_path(p) do %>
+        <div class="list_box2_s">
+          <div class="list_box2_s_title">
+            <p><%= p.title %></p>
+          </div>
+          <div class="list_box2_s_arrow">
+            <p>&lt;</p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
 
   </div>
 </div>

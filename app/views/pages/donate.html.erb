@@ -65,53 +65,30 @@
 
       <div class="shop-container">
 
+        <% @products.each do |p| %>
         <div class="shop-item">
           <div class="shop-item-img-con">
-            <%= image_tag "test2.jpg", class: "shop-item-img" %>
+            <%= image_tag(p.image.thumb.url, class: "shop-item-img") if p.image.thumb.url %>
           </div>
           <div class="shop-item-content">
             <div class="shop-item-title">
-              <p>超級袋袋</p>
+              <p><%= p.title %> (NT$ <%= p.price %>)</p>
             </div>
             <div class="shop-item-detail">
-              <p>世界充滿各種羞辱。<br>
-              平時你要行走與闖蕩，<br>
-              陪在你身邊不如在你心裡，<br>
-              你才能一次一次敢去遠方。<br>
-              不過，此時坐在你心裡，<br>
-              不如此刻無視於所有羞辱還是要在你身邊。</p>
+              <p>
+              <%= p.description %>
+              </p>
             </div>
-            <a href="">
+            <%= form_tag product_buy_path(p) do %>
+              <%= hidden_field_tag 'product_id', p.id %>
               <div class="shop-item-control">
-                <p>贊助我們</p>
+                <%= submit_tag '贊助我們', class: 'buy-button' %>
               </div>
-            </a>
+            <% end %>
           </div>
           <div class="shop-item-null"></div>
         </div>
-
-        <div class="shop-item">
-          <div class="shop-item-img-con">
-            <%= image_tag "test2.jpg", class: "shop-item-img" %>
-          </div>
-          <div class="shop-item-content">
-            <div class="shop-item-title">
-              <p>超級袋袋</p>
-            </div>
-            <div class="shop-item-detail">
-              <p>這世界人們的心中，<br>
-              不該繼續揣摩天使出現的樣子，<br>
-              也許我們一直在等待的，<br>
-              就算該是天使也其實從不是天使，</p>
-            </div>
-            <a href="">
-              <div class="shop-item-control">
-                <p>贊助我們</p>
-              </div>
-            </a>
-          </div>
-          <div class="shop-item-null"></div>
-        </div>
+      <% end %>
 
       </div>
     </div>
