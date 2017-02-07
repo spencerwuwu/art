@@ -19,6 +19,12 @@ group :development, :test do
 end
 
 group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  gem 'capistrano-rake'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
 end
