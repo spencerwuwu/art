@@ -79,12 +79,13 @@
               <%= p.description %>
               </p>
             </div>
-            <%= form_tag product_buy_path(p) do %>
-              <%= hidden_field_tag 'product_id', p.id %>
-              <div class="shop-item-control">
-                <%= submit_tag '贊助我們', class: 'buy-button' %>
+            <div class="shop-item-control">
+              <%= link_to product_path(p.id) do %>
+              <div class="buy-button">
+                <p>贊助我們</p>
               </div>
-            <% end %>
+              <% end %>
+            </div>
           </div>
           <div class="shop-item-null"></div>
         </div>

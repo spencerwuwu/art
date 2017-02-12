@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :products
+    resources :gallery_images
     resources :orders
 
     root to: "products#index"
@@ -8,11 +9,14 @@ Rails.application.routes.draw do
 
   get 'pages/index'
   get 'pages/about', as: 'about'
-  get 'pages/donate', as: 'donate'
+  
+  resources :products, only: [:show, :index]
 
-    get 'orders/:id/checkout', to: 'orders#checkout', as: 'order_checkout'
-  post 'products/:id/buy', to: 'products#buy', as: 'product_buy'
-  post 'payments/notify', to: 'payments#notify', as: 'payment_notify'
+  resources :orders, only: [:create, :show] do
+    member do
+      get 'pay'
+    end
+  end
 
   root to: redirect('pages/index')
 end

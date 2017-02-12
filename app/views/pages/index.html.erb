@@ -186,7 +186,7 @@
 
           <!-- wide -->
           <% @products.each do |p| %>
-            <%= link_to donate_path do %>
+            <%= link_to product_path(p.id) do %>
               <div class="list_box2">
                 <div class="list_box2_img">
                   <% if p.image.thumb.url %>
@@ -206,7 +206,7 @@
 
     <!-- small -->
     <% @products.each do |p| %>
-      <%= link_to product_buy_path(p) do %>
+      <%= link_to product_path(p.id) do %>
         <div class="list_box2_s">
           <div class="list_box2_s_title">
             <p><%= p.title %></p>
@@ -234,17 +234,23 @@
       </div>
       <div class="one-item" >
         <div class="block_intro"><p>花&nbsp;絮</p></div>
-        <div class="myrow">
-          <div class="gallery1">
-            <%= image_tag "temp.jpg", class: "gallery-content" %>
+        <% @gallery_images.each_slice(3) do |image_block|%>
+          <div class="myrow">
+            <% image_block.each_with_index do |gallery_image, i| %>
+              <% if gallery_image.image.large.url %>
+                <% if i == 2 %>
+                  <div class="gallery2">
+                    <%= image_tag gallery_image.image.large.url, alt: gallery_image.alt, class: "gallery-content" %>
+                  </div>
+                <% else %>
+                  <div class="gallery1">
+                    <%= image_tag gallery_image.image.large.url, alt: gallery_image.alt, class: "gallery-content" %>
+                  </div>
+                <% end %>
+              <% end %>
+            <% end %>
           </div>
-          <div class="gallery1">
-            <%= image_tag "temp.jpg", class: "gallery-content" %>
-          </div>
-          <div class="gallery2">
-            <%= image_tag "temp.jpg", class: "gallery-content" %>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
 
