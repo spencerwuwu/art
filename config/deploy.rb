@@ -9,7 +9,6 @@ set :repo_url, "git@github.com:spencerwuwu/art.git"
 # set :branch, 'master'
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/art/"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
