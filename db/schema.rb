@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212180757) do
+ActiveRecord::Schema.define(version: 20170213162021) do
 
   create_table "gallery_images", force: :cascade do |t|
     t.string   "image"
@@ -32,6 +32,24 @@ ActiveRecord::Schema.define(version: 20170212180757) do
     t.string   "school"
     t.string   "department"
     t.index ["product_id"], name: "index_orders_on_product_id"
+  end
+
+  create_table "payment_configs", force: :cascade do |t|
+    t.datetime "created_at",                                                            null: false
+    t.datetime "updated_at",                                                            null: false
+    t.string   "description"
+    t.string   "hash_key"
+    t.string   "hash_iv"
+    t.string   "merchant_id"
+    t.string   "respond_type",   default: "JSON"
+    t.string   "lang_type",      default: "zh-tw"
+    t.string   "credit",         default: "1"
+    t.string   "cvs",            default: "1"
+    t.string   "barcode",        default: "1"
+    t.string   "version",        default: "1.2"
+    t.string   "login_type",     default: "0"
+    t.string   "production_api", default: "https://api.spgateway.com/MPG/mpg_gateway"
+    t.string   "staging_api",    default: "https://capi.spgateway.com/MPG/mpg_gateway"
   end
 
   create_table "products", force: :cascade do |t|

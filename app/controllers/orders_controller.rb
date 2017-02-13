@@ -12,6 +12,8 @@ class OrdersController < ApplicationController
 
   def pay
     @order = Order.find(params[:id])
+    @config = PaymentConfig.last
+    @checkvalue = @order.checkvalue(@config)
   end
 
   def show

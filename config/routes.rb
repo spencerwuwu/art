@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :products
     resources :gallery_images
     resources :orders
+    resources :payment_configs
 
     root to: "products#index"
   end
