@@ -55,9 +55,28 @@ body
   margin-right: 2px
 
 .menubar_s
-  font-size: 4em
-  float: right
-  line-height: 0.9
+  position: fixed
+  top: 5px 
+  right: 5px
+  width: 50px
+  height: 50px
+  z-index: 200
+
+  .blockV
+    position: absolute
+    top: 17px
+    height: 3px
+    left: 10px
+    width: 30px
+    background-color: #eee
+
+  .blockH
+    position: absolute
+    top: 30px
+    height: 3px
+    left: 10px
+    width: 30px
+    background-color: #eee
 
 #menublack
   background-color: rgba(0,0,0,0.8)
@@ -330,6 +349,7 @@ body
   text-align: center
   line-height: 0.1
 
+/* list relative */
 
 .list_box
   position: relative
@@ -337,6 +357,7 @@ body
   border: 2px solid black
   margin: -1px
   float: left
+  cursor: pointer
 
 .list_box_img
   position: absolute
@@ -442,6 +463,54 @@ body
   margin-right: 5%
   padding-top: 10px
   padding-bottom: 10px
+
+.jump-item
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  width: 100%
+  background-color: rgba(0,0,0,0.8)
+  z-index: 1000
+
+.list-content
+  width: 80%
+  overflow: auto
+
+.list-content-title
+  font-size: 2em
+  color: white
+  text-decoration: bold
+
+.list-content-word
+  font-size: $normal_font
+  color: white
+
+.listJ-bottom
+  position: absolute
+  width: 30px
+  height: 30px
+  top: 0
+  right: 0
+  
+  .blockV
+    background-color: rgb( 230, 230, 230)
+    position: absolute
+    top: 5px
+    left: 13px
+    height: 20px
+    width: 4px
+
+  .blockH
+    background-color: rgb( 230, 230, 230)
+    position: absolute
+    top: 13px
+    left: 5px
+    height: 4px
+    width: 20px
+
+    &:hover
+
 
 #block3
   background-color: #fff
