@@ -361,6 +361,10 @@ body {
   background-color: #fff;
   color: #000; }
 
+#block7 {
+  background-color: #fff;
+  color: #000; }
+
 .block_intro {
   font-size: 3em;
   text-align: center;
@@ -503,7 +507,11 @@ body {
 
 .list-content-word {
   font-size: 1.3em;
-  color: white; }
+  color: white;
+  line-height: 1.5; }
+  .list-content-word a {
+    color: white;
+    border-bottom: 1px solid white; }
 
 .listJ-bottom {
   position: absolute;
@@ -558,12 +566,47 @@ body {
 .gallery-content {
   width: 100%; }
 
+/* donate */
+#donate-topic {
+  margin-top: 30px;
+  border-top: 2px solid black; }
+
+.new-block_intro {
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px rgba(80, 80, 80, 0.3); }
+  .new-block_intro p {
+    margin-top: 10px; }
+
+.one-item-d {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around; }
+
+.list_box_donate {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out; }
+  .list_box_donate:hover {
+    box-shadow: 3px 3px 3px rgba(80, 80, 80, 0.7); }
+
 #footer {
   background-color: #000;
   color: #fff;
   box-shadow: 0px -3px 5px rgba(80, 80, 80, 0.5); }
 
 .footer-item {
-  width: 80%; }
+  width: 80%;
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -386,6 +386,10 @@ body
   background-color: #fff
   color: #000
 
+#block7
+  background-color: #fff
+  color: #000
+
 .block_intro
   font-size: $btitle_font
   text-align: center
@@ -533,6 +537,11 @@ body
 .list-content-word
   font-size: $normal_font
   color: white
+  line-height: 1.5
+  a
+    color: white
+    border-bottom: 1px solid white
+
 
 .listJ-bottom
   position: absolute
@@ -559,8 +568,6 @@ body
     left: 10px
     height: 4px
     width: 20px
-
-    &:hover
 
 
 #block3
@@ -594,6 +601,41 @@ body
 .gallery-content
   width: 100%
 
+/* donate */
+#donate-topic
+  margin-top: 30px
+  border-top: 2px solid black
+
+.new-block_intro
+  font-size: $btitle_font
+  text-align: center
+  text-shadow: 2px 2px  rgba(80,80,80,0.3)
+  p
+    margin-top: 10px
+
+.one-item-d
+  position: relative
+  width: 80%
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-flow: row wrap
+  justify-content: space-around
+  align-content: space-around
+
+.list_box_donate
+  position: relative
+  overflow: hidden
+  border: 2px solid black
+  cursor: pointer
+  margin: 10px 
+  transition: all .3s ease-in-out
+  &:hover
+    box-shadow: 3px 3px 3px rgba( 80, 80, 80, 0.7)
+
+
 #footer
   background-color: #000
   color: #fff
@@ -601,3 +643,4 @@ body
 
 .footer-item
   width: 80%
+  font-size: 1.3em

@@ -120,7 +120,33 @@ $(document).ready(function(){
       $( Target ).fadeOut();
 
     });
+    $.each([ 1, 2, 3, 4, 5, 6, 7, 8], function( index, i ){	
+      var TargetD = "#listD-item" + i;
+
+      $( TargetD ).fadeOut();
+
+    });
   });
+
+  $.each([ 1, 2, 3, 4, 5, 6, 7, 8], function( index, i ){	
+    var name = "#donate" + i;
+    var nameJump = "#listD-item" + i;
+    $( nameJump ).css("display", "none");
+    $( name ).css("cursor", "pointer");
+    $( name ).css("box-shadow", "1px 1px 1px rgba( 80, 80, 80, 0.7)");
+
+    $( name ).hover(function(){
+        $( name ).css("box-shadow", "3px 3px 3px rgba( 80, 80, 80, 0.7)");
+    },function(){
+        $( name ).css("box-shadow", "1px 1px 1px rgba( 80, 80, 80, 0.7)");
+    });
+
+    $( name  ).click(function(){
+      $( nameJump ).fadeIn();
+    });
+
+  });
+
 
   var windowH = $(window).height();
   $(".list-content").css("height", windowH * 0.8);

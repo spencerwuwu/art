@@ -3,6 +3,11 @@
     display: block;
     padding-top: 100%;
 }
+.list_box_donate::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
 
 
 
@@ -33,6 +38,9 @@
     }
     .list_box{
         width: 100%
+    }
+    .list_box_donate{
+        width: 40%
     }
     .list_box2{
         display: none;
@@ -77,6 +85,9 @@
     .list_box{
         width: 100%
     }
+    .list_box_donate{
+        width: 40%
+    }
     .list_box2{
         display: none;
     }
@@ -119,6 +130,9 @@
     }
     .list_box{
         width: 24%
+    }
+    .list_box_donate{
+        width: 18%
     }
     .list_box2{
         width: 25%;
@@ -176,6 +190,9 @@
     }
     .list_box{
         width: 24%
+    }
+    .list_box_donate{
+        width: 18%
     }
     .list_box2{
         width: 25%;
