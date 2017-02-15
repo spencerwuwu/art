@@ -17,6 +17,10 @@ Rails.application.routes.draw do
     member do
       get 'pay'
     end
+    collection do
+      post 'nofify'
+      get 'finish'
+    end
   end
 
   root to: redirect('pages/index')
