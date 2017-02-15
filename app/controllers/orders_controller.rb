@@ -19,10 +19,4 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
   end
-
-  def notify
-  end
-
-  def finish
-  end
 end

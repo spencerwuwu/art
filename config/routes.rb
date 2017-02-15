@@ -16,12 +16,12 @@ Rails.application.routes.draw do
   resources :orders, only: [:create, :show] do
     member do
       get 'pay'
-    end
-    collection do
-      post 'nofify'
       get 'finish'
     end
   end
+
+  post 'payment/notify', as: 'payment_notify' # Spgateway notify URL
+  post 'payment/return', as: 'payment_return' # Spgateway return URL
 
   root to: redirect('pages/index')
 end

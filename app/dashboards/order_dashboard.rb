@@ -20,6 +20,9 @@ class OrderDashboard < Administrate::BaseDashboard
     email: Field::String,
     school: Field::String,
     department: Field::String,
+    aasm_state: Field::String,
+    message: Field::String,
+    status: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -28,10 +31,11 @@ class OrderDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :product,
     :id,
-    :state,
-    :type,
+    :product,
+    :name,
+    :aasm_state,
+    :message,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -49,6 +53,9 @@ class OrderDashboard < Administrate::BaseDashboard
     :email,
     :school,
     :department,
+    :aasm_state,
+    :message,
+    :status,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -64,6 +71,9 @@ class OrderDashboard < Administrate::BaseDashboard
     :email,
     :school,
     :department,
+    :aasm_state,
+    :message,
+    :status,
   ].freeze
 
   # Overwrite this method to customize how orders are displayed
