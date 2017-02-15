@@ -6,6 +6,7 @@ body, p, h1, h2, h3, h4, h5, h6, a {
 body {
   margin: 0; }
 
+/* menu */
 .topmenu {
   margin: 0;
   z-index: 150;
@@ -38,7 +39,7 @@ body {
   display: inline-block; }
 
 .menubar_w_item {
-  font-size: 1.5em;
+  font-size: 1.3em;
   float: right;
   width: 21%;
   text-align: center;
@@ -51,21 +52,34 @@ body {
   right: 5px;
   width: 50px;
   height: 50px;
-  z-index: 200; }
+  z-index: 300;
+  cursor: pointer; }
   .menubar_s .blockV {
     position: absolute;
     top: 17px;
     height: 3px;
     left: 10px;
     width: 30px;
-    background-color: #eee; }
+    background-color: #eee;
+    transition: all 0.5s ease-in-out; }
   .menubar_s .blockH {
     position: absolute;
     top: 30px;
     height: 3px;
     left: 10px;
     width: 30px;
-    background-color: #eee; }
+    background-color: #eee;
+    transition: all 0.5s ease-in-out; }
+
+.turnRight {
+  -ms-transform: rotate(45deg) translate(1px, 8px);
+  -webkit-transform: rotate(45deg) translate(1px, 8px);
+  transform: rotate(45deg) translate(1px, 8px); }
+
+.turnLeft {
+  -ms-transform: rotate(-45deg) translate(1px, -7px);
+  -webkit-transform: rotate(-45deg) translate(1px, -7px);
+  transform: rotate(-45deg) translate(1px, -7px); }
 
 #menublack {
   background-color: rgba(0, 0, 0, 0.8);
@@ -93,6 +107,39 @@ body {
   left: 0;
   right: 0; }
 
+/* narrow */
+.narrow-menu {
+  position: fixed;
+  top: 0;
+  width: 170px;
+  height: 100%;
+  overflow: auto;
+  z-index: 251;
+  background-color: #202020;
+  transition: all 1s ease-in-out;
+  padding-top: 90px; }
+
+.menu-slideIn {
+  opacity: 1;
+  right: 0; }
+
+.menu-slideOut {
+  opacity: 0.4;
+  right: -500px; }
+
+.side-menu-content {
+  width: 100%;
+  font-size: 1.3em;
+  text-decoration: bold;
+  color: #eee;
+  border-bottom: 2px solid #eee;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
+  .side-menu-content a {
+    color: #eee; }
+
+/* basic */
 .mycon {
   width: 100%;
   padding: 0;
@@ -460,22 +507,25 @@ body {
 
 .listJ-bottom {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   top: 0;
-  right: 0; }
+  right: 0;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
   .listJ-bottom .blockV {
     background-color: #e6e6e6;
     position: absolute;
-    top: 5px;
-    left: 13px;
+    top: 10px;
+    left: 18px;
     height: 20px;
     width: 4px; }
   .listJ-bottom .blockH {
     background-color: #e6e6e6;
     position: absolute;
-    top: 13px;
-    left: 5px;
+    top: 18px;
+    left: 10px;
     height: 4px;
     width: 20px; }
 

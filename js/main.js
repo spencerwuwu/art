@@ -1,4 +1,6 @@
 
+var btnCheck = 0;
+
 $(document).ready(function(){
 
   //set intro height
@@ -33,19 +35,51 @@ $(document).ready(function(){
 
   $("#about-island").css("top", nh);
 
-   var shoph = w/16*9*0.8+60;
-    $("#shop-intro").css("height", shoph);
-  //menubtn functions
-  $("#menubtn").on('click', function(e){
-    e.preventDefault();
-    $("#menublack").fadeIn("fast");
+  var shoph = w/16*9*0.8+60;
+  $("#shop-intro").css("height", shoph);
 
+  //menubtn functions
+
+  $("#menubtn").on('click', function(e){
+    if ( btnCheck == 0  ){
+      e.preventDefault();
+      $("#menublack").fadeIn("fast");
+      $("#menu-side").removeClass("menu-slideOut");
+      $("#menu-side").addClass("menu-slideIn");
+      $("#menu-side").css("right", 0);
+
+      $(".blockV").addClass("turnRight");
+      $(".blockH").addClass("turnLeft");
+
+      btnCheck = 1;
+    }
+    else{
+      e.preventDefault();
+      $("#menublack").fadeOut("fast");
+      $("#menu-side").removeClass("menu-slideIn");
+      $("#menu-side").addClass("menu-slideOut");
+      $("#menu-side").css("right", -800);
+
+      $(".blockV").removeClass("turnRight");
+      $(".blockH").removeClass("turnLeft");
+
+      btnCheck = 0;
+    }
   });
   $("#menublack").on('click', function(e){
     e.preventDefault();
     $("#menublack").fadeOut("fast");
+    $("#menu-side").removeClass("menu-slideIn");
+    $("#menu-side").addClass("menu-slideOut");
+    $("#menu-side").css("right", -800);
 
+    $(".blockV").removeClass("turnRight");
+    $(".blockH").removeClass("turnLeft");
+
+    btnCheck = 0;
   });
+
+
 
 
   $.each([ 1, 2, 3, 4, 5, 6, 7], function( index, i ){	

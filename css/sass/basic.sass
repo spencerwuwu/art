@@ -1,4 +1,4 @@
-$menu_font: 1.5em
+$menu_font: 1.3em
 $normal_font: 1.3em
 $snormal_font: 1em
 $mtitle_font: 1.7em
@@ -14,6 +14,7 @@ body,p,h1,h2,h3,h4,h5,h6,a
 body
   margin: 0
 
+/* menu */
 .topmenu
   margin: 0
   z-index: 150
@@ -55,9 +56,41 @@ body
   margin-right: 2px
 
 .menubar_s
-  font-size: 4em
-  float: right
-  line-height: 0.9
+  position: fixed
+  top: 5px 
+  right: 5px
+  width: 50px
+  height: 50px
+  z-index: 300
+  cursor: pointer
+
+  .blockV
+    position: absolute
+    top: 17px
+    height: 3px
+    left: 10px
+    width: 30px
+    background-color: #eee
+    transition: all .5s ease-in-out
+
+  .blockH
+    position: absolute
+    top: 30px
+    height: 3px
+    left: 10px
+    width: 30px
+    background-color: #eee
+    transition: all .5s ease-in-out
+
+.turnRight
+  -ms-transform: rotate(45deg) translate(1px, 8px)
+  -webkit-transform: rotate(45deg) translate(1px, 8px)
+  transform: rotate(45deg) translate(1px, 8px)
+
+.turnLeft
+  -ms-transform: rotate(-45deg) translate(1px, -7px)
+  -webkit-transform: rotate(-45deg) translate(1px, -7px)
+  transform: rotate(-45deg) translate(1px, -7px)
 
 #menublack
   background-color: rgba(0,0,0,0.8)
@@ -77,6 +110,48 @@ body
 
 #btn2_w
   border-right: 0.5px solid #fff
+
+.cover
+  background-color: #eee
+  width: 100%
+  height: 100%
+  position: fixed
+  left: 0
+  right: 0
+
+/* narrow */
+.narrow-menu
+  position: fixed
+  top: 0
+  width: 170px
+  height: 100%
+  overflow: auto
+  z-index: 251
+  background-color: #202020
+  transition: all 1s ease-in-out
+  padding-top: 90px
+
+.menu-slideIn
+  opacity: 1
+  right: 0 
+
+.menu-slideOut
+  opacity: 0.4
+  right: -500px
+
+.side-menu-content
+  width: 100%
+  font-size: 1.3em
+  text-decoration: bold
+  color: #eee
+  border-bottom: 2px solid #eee
+  margin-top: 40px
+  margin-bottom: 40px
+  text-align: center
+  a
+    color: #eee
+
+/* basic */
 
 .mycon
   width: 100%
@@ -111,13 +186,12 @@ body
 
 .one-item
   position: relative
-  
+
 .one-item-n
   position: relative
 
 .two-item
   position: relative
-
 
 
 #footer
