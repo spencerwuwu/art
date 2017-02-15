@@ -46,11 +46,6 @@ class Order < ApplicationRecord
     return Digest::SHA256.hexdigest(raw).upcase
   end
 
-  def checkcode(config, result)
-    raw = "HashIV=#{config.hash_iv}&Amt=#{result['Amt']}&MerchantID=#{config.merchant_id}&MerchantOrderNo=#{result['MerchantOrderNo']}&TradeNo=#{result['TradeNo']}&HashKey=#{config.hash_key}"
-    return Digest::SHA256.hexdigest(raw).upcase
-  end
-
   def update_payment_result(result)
     self.status = result['Status']
     self.result = result

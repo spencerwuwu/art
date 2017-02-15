@@ -33,7 +33,12 @@ class PaymentController < ApplicationController
   private
 
   def result_is_valid
-    @result['CheckCode'] == @order.checkcode(@config, @result)
+    @result['CheckCode'] == checkcode
+  end
+
+  def checkcode
+    raw = "HashIV=#{@config.hash_iv}&Amt=#{@result['Amt']}&MerchantID=#{@config.merchant_id}&MerchantOrderNo=#{@result['MerchantOrderNo']}&TradeNo=#{@result['TradeNo']}&HashKey=#{@config.hash_key}"
+    return Digest::SHA256.hexdigest(raw).upcase
   end
 
   def set_payment_config
