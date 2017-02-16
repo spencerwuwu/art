@@ -1,2 +1,12 @@
 *.sassc
+/.bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+.byebug_history
 *.swp
+/public/uploads
+/config/secrets.yml
