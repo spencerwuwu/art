@@ -6,6 +6,7 @@ body, p, h1, h2, h3, h4, h5, h6, a {
 body {
   margin: 0; }
 
+/* menu */
 .topmenu {
   margin: 0;
   z-index: 150;
@@ -38,7 +39,7 @@ body {
   display: inline-block; }
 
 .menubar_w_item {
-  font-size: 1.5em;
+  font-size: 1.3em;
   float: right;
   width: 21%;
   text-align: center;
@@ -46,9 +47,39 @@ body {
   margin-right: 2px; }
 
 .menubar_s {
-  font-size: 4em;
-  float: right;
-  line-height: 0.9; }
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  z-index: 300;
+  cursor: pointer; }
+  .menubar_s .blockV {
+    position: absolute;
+    top: 17px;
+    height: 3px;
+    left: 10px;
+    width: 30px;
+    background-color: #eee;
+    transition: all 0.5s ease-in-out; }
+  .menubar_s .blockH {
+    position: absolute;
+    top: 30px;
+    height: 3px;
+    left: 10px;
+    width: 30px;
+    background-color: #eee;
+    transition: all 0.5s ease-in-out; }
+
+.turnRight {
+  -ms-transform: rotate(45deg) translate(1px, 8px);
+  -webkit-transform: rotate(45deg) translate(1px, 8px);
+  transform: rotate(45deg) translate(1px, 8px); }
+
+.turnLeft {
+  -ms-transform: rotate(-45deg) translate(1px, -7px);
+  -webkit-transform: rotate(-45deg) translate(1px, -7px);
+  transform: rotate(-45deg) translate(1px, -7px); }
 
 #menublack {
   background-color: rgba(0, 0, 0, 0.8);
@@ -76,6 +107,39 @@ body {
   left: 0;
   right: 0; }
 
+/* narrow */
+.narrow-menu {
+  position: fixed;
+  top: 0;
+  width: 170px;
+  height: 100%;
+  overflow: auto;
+  z-index: 251;
+  background-color: #202020;
+  transition: all 1s ease-in-out;
+  padding-top: 90px; }
+
+.menu-slideIn {
+  opacity: 1;
+  right: 0; }
+
+.menu-slideOut {
+  opacity: 0.4;
+  right: -500px; }
+
+.side-menu-content {
+  width: 100%;
+  font-size: 1.3em;
+  text-decoration: bold;
+  color: #eee;
+  border-bottom: 2px solid #eee;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
+  .side-menu-content a {
+    color: #eee; }
+
+/* basic */
 .mycon {
   width: 100%;
   padding: 0;
@@ -297,6 +361,10 @@ body {
   background-color: #fff;
   color: #000; }
 
+#block7 {
+  background-color: #fff;
+  color: #000; }
+
 .block_intro {
   font-size: 3em;
   text-align: center;
@@ -308,12 +376,14 @@ body {
   text-align: center;
   line-height: 0.1; }
 
+/* list relative */
 .list_box {
   position: relative;
   overflow: hidden;
   border: 2px solid black;
   margin: -1px;
-  float: left; }
+  float: left;
+  cursor: pointer; }
 
 .list_box_img {
   position: absolute;
@@ -417,6 +487,56 @@ body {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+.jump-item {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000; }
+
+.list-content {
+  width: 80%;
+  overflow: auto; }
+
+.list-content-title {
+  font-size: 2em;
+  color: white;
+  text-decoration: bold; }
+
+.list-content-word {
+  font-size: 1.3em;
+  color: white;
+  line-height: 1.5; }
+  .list-content-word a {
+    color: white;
+    border-bottom: 1px solid white; }
+
+.listJ-bottom {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  .listJ-bottom .blockV {
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    height: 20px;
+    width: 4px; }
+  .listJ-bottom .blockH {
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    height: 4px;
+    width: 20px; }
+
 #block3 {
   background-color: #fff;
   color: #000; }
@@ -446,9 +566,47 @@ body {
 .gallery-content {
   width: 100%; }
 
+/* donate */
+#donate-topic {
+  margin-top: 30px;
+  border-top: 2px solid black; }
+
+.new-block_intro {
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px rgba(80, 80, 80, 0.3); }
+  .new-block_intro p {
+    margin-top: 10px; }
+
+.one-item-d {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around; }
+
+.list_box_donate {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out; }
+  .list_box_donate:hover {
+    box-shadow: 3px 3px 3px rgba(80, 80, 80, 0.7); }
+
 #footer {
   background-color: #000;
   color: #fff;
   box-shadow: 0px -3px 5px rgba(80, 80, 80, 0.5); }
+
+.footer-item {
+  width: 80%;
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */
