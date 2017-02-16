@@ -1,0 +1,35 @@
+<div class="mycon" style="height:100px">
+</div>
+<div class="mycon">
+  <h1><%= @product.title %></h1>
+  <h3>共：<%= @product.price %></h3>
+  <p><%= @product.description %></p>
+  <h1>請填寫聯絡資訊</h1>
+
+  <%= form_for @order do |f| %>
+    <p>
+    <%= f.label :name, '姓名: ' %>
+    <%= f.text_field :name, required: 'required' %>
+    </p>
+    <p>
+    <%= f.label :mobil, '電話: ' %>
+    <%= f.text_field :mobile, required: 'required' %>
+    </p>
+    <p>
+    <%= f.label :email, 'email: ' %>
+    <%= f.email_field :email, required: 'required' %>
+    </p>
+    <p>
+    <%= f.label :school, '學校: ' %>
+    <%= f.text_field :school %>
+    </p>
+    <p>
+    <%= f.label :department, '系級: ' %>
+    <%= f.text_field :department %>
+    </p>
+    <p>
+    <%= f.hidden_field :product_id %>
+    <%= f.submit '前往付款頁面' %>
+    </p>
+  <% end %>
+</div>
