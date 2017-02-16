@@ -152,6 +152,9 @@ $(document).ready(function(){
   $(".list-content").css("height", windowH * 0.8);
   $(".list-content").css("margin-top", windowH * 0.1);
 
+  var listW = $("#donate1").width();
+  $(".list_box_donate").css("width", listW);
+
 });
 
 
