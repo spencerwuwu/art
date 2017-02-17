@@ -54,6 +54,9 @@
     .one-item-n{
         width: 60%;
     }
+    .one-item-n-l{
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 486px){
@@ -98,6 +101,9 @@
         width: 80%;
     }
     .one-item-n{
+        width: 60%;
+    }
+    .one-item-n-l{
         width: 60%;
     }
 }
@@ -145,6 +151,9 @@
         width: 40%;
     }
     .one-item-n{
+        width: 85%;
+    }
+    .one-item-n-l{
         width: 85%;
     }
 }
@@ -206,6 +215,9 @@
     }
     .one-item-n{
         width: 80%;
+    }
+    .one-item-n-l{
+        width: 1100px 
     }
 }
 
