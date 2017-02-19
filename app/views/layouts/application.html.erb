@@ -2,41 +2,89 @@
 <html>
   <head>
     <title>交大藝趣節</title>
-    <meta charset="UTF-8">
-    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0">
 
-    <%= csrf_meta_tags %>
+	<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= javascript_include_tag 'application' %>
+
+	<%= yield :head =%>
+	<% content_for :head
+	do %>
+	<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-91953337-1', 'auto');
+ga('send', 'pageview');
+
+	</script>
+<% end %>
+
   </head>
 
   <body>
-    <div id="menublack"></div>
-    <div class="topmenu">
-      <%= link_to root_path do %> 
-        <div class="mylogo"></div>
-      <% end %>
-      <div class="menubar_w">
-        <div class="menubar_w_item" id="btn3_w">
-          <%= link_to '藝文誌', 'http://isolated-island.nctu.me' %>
-        </div>
-        <div class="menubar_w_item" id="btn2_w">
-          <%= link_to '周邊贊助', products_path %>
-        </div>
-        <div class="menubar_w_item" id="btn1_w">
-          <%= link_to '關於我們', about_path %>
-        </div>
-      </div>
-      <div class="menubar_s" id="menubtn" ><a>&equiv;</a></div>
-    </div>
+	  <div id="menublack"></div>
+	  <div class="menubar_s" id="menubtn" >
+		  <div class="blockV"></div>
+		  <div class="blockH"></div>
+	  </div>
 
-    <%= yield %>
+	  <!-- side menu bar -->
+	  <div class="narrow-menu menu-slideOut" id="menu-side">
+		  <div class="myrow-m">
+			  <div class="one-item">
+				  <div class="side-menu-content">
+					  <%= link_to '關於我們', about_path %>
+				  </div>
+				  <div class="side-menu-content">
+					  <%= link_to '周邊贊助', products_path %>
+				  </div>
+				  <div class="side-menu-content">
+					  <%= link_to '藝文誌', 'http://isolated-island.nctu.me' %>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
 
-    <div class="mycon" id="footer">
-      <!-- footer -->
-      <div style="height: 200px">
-      </div>
-    </div>
+
+	  <div class="topmenu">
+		  <%= link_to root_path do %> 
+			  <div class="mylogo">
+				  <%= image_tag "logo.png", style: "width: 100%" %>
+			  </div>
+		  <% end %>
+		  <div class="menubar_w">
+			  <div class="menubar_w_item" id="btn3_w">
+				  <%= link_to '藝文誌', 'http://isolated-island.nctu.me' %>
+			  </div>
+			  <div class="menubar_w_item" id="btn2_w">
+				  <%= link_to '周邊贊助', products_path %>
+			  </div>
+			  <div class="menubar_w_item" id="btn1_w">
+				  <%= link_to '關於我們', about_path %>
+			  </div>
+		  </div>
+	  </div>
+
+	  <%= yield %>
+
+	  <div class="mycon" id="footer">
+		  <!-- footer -->
+		  <div class="myrow">
+			  <div class="footer-item">
+				  <p>地點：新竹市東區大學路1001號 國立交通大學<br>
+				  時間：2017/3/5（日）-3/26（日）<br>
+				  主辦單位：紅點創作、孤島藝趣節籌辦組織<br>
+				  協辦單位：交通大學學生聯合會<br>
+				  指導單位：交大藝文中心、交大課外活動組、交大建築研究所 <br>
+				  </p>
+			  </div>
+		  </div>
+	  </div>
   </body>
 </html>
