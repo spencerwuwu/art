@@ -366,7 +366,8 @@ body {
 
 #block7 {
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  padding-bottom: 25px; }
 
 .block_intro {
   font-size: 3em;
@@ -606,11 +607,8 @@ body {
   position: relative;
   overflow: hidden;
   border: 2px solid black;
-  cursor: pointer;
   margin: 10px;
   transition: all 0.3s ease-in-out; }
-  .list_box_donate:hover {
-    box-shadow: 3px 3px 3px rgba(80, 80, 80, 0.7); }
 
 .list_box_img {
   position: absolute;
