@@ -82,7 +82,7 @@ $(document).ready(function(){
 
 
 
-  $.each([ 1, 2, 3, 4, 5, 6, 7], function( index, i ){	
+  $.each([ 1, 2, 3, 4, 5, 6, 7, 8], function( index, i ){	
     var name = "#list" + i;
     var name2 = "#list"+i+">.list_box_content";
     var name3 = "#list"+i+">.list_box_img";
@@ -103,7 +103,7 @@ $(document).ready(function(){
 
   });
 
-  $.each([ 1, 2, 3, 4, 5, 6, 7], function( index, i ){	
+  $.each([ 1, 2, 3, 4, 5, 6, 7, 8], function( index, i ){	
     var name = "#list" + i;
     var nameJump = "#listJ-item" + i;
 
@@ -114,7 +114,7 @@ $(document).ready(function(){
   });
 
   $(".listJ-bottom").click(function(){
-    $.each([ 1, 2, 3, 4, 5, 6, 7], function( index, i ){	
+    $.each([ 1, 2, 3, 4, 5, 6, 7, 8], function( index, i ){	
       var Target = "#listJ-item" + i;
 
       $( Target ).fadeOut();
