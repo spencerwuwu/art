@@ -1,6 +1,8 @@
 <div class="mycon" style="height: 100px;">
 </div>
 <div class="mycon">
+	<div class="myrow-m">
+		<div class="one-item">
   <h1>瀏覽器將自動跳轉至支付頁面</h1>
   <%= form_tag @config.api, id: 'payment_form' do %>
     <%= hidden_field_tag 'MerchantID', @config.merchant_id %>
@@ -18,4 +20,6 @@
     <%= hidden_field_tag 'CVS', @config.cvs %>
     <%= hidden_field_tag 'BARCODE', @config.barcode %>
   <% end %>
+		</div>
+	</div>
 </div>
