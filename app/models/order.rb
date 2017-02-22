@@ -8,10 +8,12 @@ class Order < ApplicationRecord
 
     event :confirm do
       transitions :from => :created, :to => :confirmed
+      transitions :from => :payment_received, :to => :payment_received
     end
 
     event :notify do
       transitions :from => :confirmed, :to => :payment_received
+      transitions :from => :created, :to => :payment_received
     end
 
     event :ship do
