@@ -136,7 +136,7 @@ $(document).ready(function(){
     $( name ).css("box-shadow", "2px 2px 2px rgba( 80, 80, 80, 0.7)");
 
     $( name ).hover(function(){
-        $( name ).css("box-shadow", "3px 3px 3px rgba( 80, 80, 80, 0.7)");
+        $( name ).css("box-shadow", "4px 4px 4px rgba( 80, 80, 80, 0.8)");
     },function(){
         $( name ).css("box-shadow", "2px 2px 2px rgba( 80, 80, 80, 0.7)");
     });
